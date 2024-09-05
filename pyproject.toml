@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyls"
+version = "0.1.0"
+description = "A Python package to list directory contents."
+authors = ["subhasreedutta91@gmail.com"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
+pyls = "pyls.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools]
+include_package_data = true
